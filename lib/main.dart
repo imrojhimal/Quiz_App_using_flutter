@@ -3,13 +3,20 @@ import 'package:quizapp/color_grad.dart';
 void main()
 {
   runApp(
-    const MaterialApp(home:
+     MaterialApp(home:
     Scaffold(body:
-    ColorGrad(Color.fromARGB(255, 114, 14, 120),
-    Color.fromARGB(255, 78, 12, 95)
-    ) ,
+    Container(
+    decoration: const BoxDecoration(
+      gradient: LinearGradient(
+        colors:[Color.fromARGB(255, 104, 13, 110),
+        Color.fromARGB(255, 69, 3, 60)],
+       begin:Alignment.topLeft ,
+       end:Alignment.bottomLeft),
+    )
+    ,child:const ColorGrad())
+    ) 
+
     )
 
-   )
-);
+   );
 }

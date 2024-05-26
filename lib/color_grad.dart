@@ -8,7 +8,9 @@ class ColorGrad extends StatelessWidget
   @override
   Widget build(context)
   {
-    return const Text('Starting screen');
+    return const Center(child: 
+     Text('Starting screen')
+    ,);
   }
 
 }

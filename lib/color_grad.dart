@@ -13,8 +13,19 @@ class ColorGrad extends StatelessWidget
       mainAxisSize: MainAxisSize.min,
       children:
       [Image.asset('assets/images/quiz-logo.png',width: 300,),
-      const  SizedBox(height: 20,),
-       const Text('Learn flutter in fun way !')]
+      const  SizedBox(height: 50,),
+       const Text('Learn flutter in fun way !',
+       style: TextStyle(
+        color:Color.fromARGB(255, 245, 238, 238),
+        fontSize: 24)
+        ,),
+        const SizedBox(height: 30,),
+        OutlinedButton(onPressed:(){}, 
+        style:OutlinedButton.styleFrom(
+          foregroundColor: Colors.white
+        ),
+        child:const Text('Start Quiz'))
+        ]
       ,)
     ,);
   }

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class ColorGrad extends StatelessWidget
 {
@@ -20,11 +21,12 @@ class ColorGrad extends StatelessWidget
         fontSize: 24)
         ,),
         const SizedBox(height: 30,),
-        OutlinedButton(onPressed:(){}, 
+        OutlinedButton.icon(onPressed:(){}, 
         style:OutlinedButton.styleFrom(
           foregroundColor: Colors.white
         ),
-        child:const Text('Start Quiz'))
+        icon:const Icon(Icons.arrow_right_alt_outlined),
+        label:const Text('Start Quiz'))
         ]
       ,)
     ,);

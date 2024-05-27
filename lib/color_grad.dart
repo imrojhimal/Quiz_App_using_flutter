@@ -8,8 +8,14 @@ class ColorGrad extends StatelessWidget
   @override
   Widget build(context)
   {
-    return const Center(child: 
-     Text('Starting screen')
+    return Center(child: 
+     Column(
+      mainAxisSize: MainAxisSize.min,
+      children:
+      [Image.asset('assets/images/quiz-logo.png',width: 300,),
+      const  SizedBox(height: 20,),
+       const Text('Learn flutter in fun way !')]
+      ,)
     ,);
   }
 

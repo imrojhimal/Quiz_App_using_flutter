@@ -13,7 +13,9 @@ class ColorGrad extends StatelessWidget
      Column(
       mainAxisSize: MainAxisSize.min,
       children:
-      [Image.asset('assets/images/quiz-logo.png',width: 300,),
+      [Image.asset('assets/images/quiz-logo.png',
+      width: 300,
+      color: const Color.fromARGB(155, 240, 236, 236),),
       const  SizedBox(height: 50,),
        const Text('Learn flutter in fun way !',
        style: TextStyle(

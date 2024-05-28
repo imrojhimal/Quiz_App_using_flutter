@@ -4,7 +4,8 @@ import 'package:flutter/widgets.dart';
 
 class ColorGrad extends StatelessWidget
 {
-  const ColorGrad({super.key});
+  const ColorGrad(this.startQuiz,{super.key});
+  final void Function() startQuiz;
 
   @override
   Widget build(context)
@@ -24,7 +25,7 @@ class ColorGrad extends StatelessWidget
         ,),
         const SizedBox(height: 30,),
         OutlinedButton.icon(onPressed:(){
-          
+
         }, 
         style:OutlinedButton.styleFrom(
           foregroundColor: Colors.white

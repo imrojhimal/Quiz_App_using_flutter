@@ -24,9 +24,7 @@ class ColorGrad extends StatelessWidget
         fontSize: 24)
         ,),
         const SizedBox(height: 30,),
-        OutlinedButton.icon(onPressed:(){
-
-        }, 
+        OutlinedButton.icon(onPressed:startQuiz, 
         style:OutlinedButton.styleFrom(
           foregroundColor: Colors.white
         ),

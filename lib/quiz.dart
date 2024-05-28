@@ -13,7 +13,13 @@ class Quiz extends StatefulWidget
 }
 class _QuizState extends State<Quiz>
 {
-  Widget activeScreen=const ColorGrad(switchScreen);
+ 
+  Widget ?activeScreen;
+@override
+  void initState() {
+   activeScreen=ColorGrad(switchScreen);
+    super.initState();
+  }
   void switchScreen()
   {
     setState(() {
@@ -31,9 +37,12 @@ class _QuizState extends State<Quiz>
         colors:[Color.fromARGB(255, 44, 2, 61),
         Color.fromRGBO(51, 9, 72, 1)],
        begin:Alignment.topLeft ,
-       end:Alignment.bottomLeft),
+       end:Alignment.bottomLeft
+       ),
     )
-    ,child:const ColorGrad())
+    ,
+    child: activeScreen,
+    )
     ) 
 
     );

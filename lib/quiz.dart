@@ -23,6 +23,11 @@ var activeScreen='start';
   @override
   Widget build(context)
   {
+Widget screen=ColorGrad(switchScreen);
+if(activeScreen=='question')
+{
+  screen=const QuestionScreen();
+}
     return  MaterialApp(home:
     Scaffold(body:
     Container(
@@ -35,10 +40,8 @@ var activeScreen='start';
        ),
     )
     ,
-    child:
-     activeScreen=='start'?
-     ColorGrad(switchScreen):
-     const QuestionScreen(),
+    child:screen
+    ,
     )
     ) 
 

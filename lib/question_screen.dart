@@ -14,12 +14,17 @@ class _QuestionScreen extends State<QuestionScreen>
  Widget build(context)
  {
   return 
-   Column(children: [
-    const Text('the questions'),
-    const  SizedBox(height: 30,),
-     ElevatedButton(onPressed: (){}, child: const Text('Answer 1'),Colors.deepPurple),
-     ElevatedButton(onPressed: (){}, child: const Text('Answer 2')),
-     ElevatedButton(onPressed: (){}, child: const Text('Answer 3')),
-     ElevatedButton(onPressed: (){}, child: const Text('Answer 4'))],);
+   SizedBox(
+    width:double.infinity,
+     child: 
+       Column(children: [
+        const Text('the questions'),
+        const  SizedBox(height: 30,),
+         ElevatedButton(onPressed: (){}, child: const Text('Answer 1')),
+         ElevatedButton(onPressed: (){}, child: const Text('Answer 2')),
+         ElevatedButton(onPressed: (){}, child: const Text('Answer 3')),
+         ElevatedButton(onPressed: (){}, child: const Text('Answer 4'))],),
+     
+   );
  }
 }

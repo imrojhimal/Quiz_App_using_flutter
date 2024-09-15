@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class ColorGrad extends StatelessWidget
 {
@@ -19,9 +18,8 @@ class ColorGrad extends StatelessWidget
       color: const Color.fromARGB(155, 240, 236, 236),),
       const  SizedBox(height: 50,),
        const Text('Learn flutter in fun way !',
-       style: TextStyle(
-        color:Color.fromARGB(255, 245, 238, 238),
-        fontSize: 24)
+       style: 
+       TextStyle( color:Color.fromARGB(255, 245, 238, 238),fontSize: 24)
         ,),
         const SizedBox(height: 30,),
         OutlinedButton.icon(onPressed:startQuiz, 

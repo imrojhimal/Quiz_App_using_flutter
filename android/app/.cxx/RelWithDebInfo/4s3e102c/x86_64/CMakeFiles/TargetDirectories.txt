@@ -1,0 +1,2 @@
+C:/fluttercode/quizapp/android/app/.cxx/RelWithDebInfo/4s3e102c/x86_64/CMakeFiles/edit_cache.dir
+C:/fluttercode/quizapp/android/app/.cxx/RelWithDebInfo/4s3e102c/x86_64/CMakeFiles/rebuild_cache.dir

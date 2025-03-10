@@ -1,0 +1,2 @@
+C:/fluttercode/quizapp/android/app/.cxx/Debug/564h4l06/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/fluttercode/quizapp/android/app/.cxx/Debug/564h4l06/armeabi-v7a/CMakeFiles/rebuild_cache.dir
